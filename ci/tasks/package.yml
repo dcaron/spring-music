@@ -11,8 +11,9 @@ inputs:
 
 run:
   path: "source-code/gradlew"
-  args: ["--build-file", "source-code/build.gradle", "build"]
+  args: ["--build-file", "source-code/build.gradle", "assemble"]
 
 params:
   TERM: -dumb
-  GRADLE_OPTS: -Dorg.gradle.native=false -Dorg.gradle.logging.level=info
+  GRADLE_OPTS: -Dorg.gradle.native=false
+# -Dorg.gradle.logging.level=info

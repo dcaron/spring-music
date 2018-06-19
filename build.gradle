@@ -13,6 +13,8 @@ buildscript {
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
+
+
 }
 
 plugins {
@@ -73,10 +75,15 @@ dependencies {
 
 //jar {
 //    baseName = "spring-music"
-//    version = "" // omit the version from the war file name
+//    version = "3.0" // omit the version from the war file name
 //}
 
 
-springBoot  {
-    buildInfo()
+//springBoot  {
+//    buildInfo()
+//}
+
+bootJar {
+    baseName = 'spring-music'
+    version =  '1.0'
 }
