@@ -15,6 +15,11 @@ buildscript {
     }
 }
 
+
+plugins {
+    id "com.gorylenko.gradle-git-properties" version "1.4.17"
+}
+
 apply plugin: 'java'
 
 apply plugin: 'eclipse-wtp'
@@ -70,4 +75,9 @@ dependencies {
 jar {
     baseName = "spring-music"
     version = "" // omit the version from the war file name
+}
+
+
+springBoot  {
+    buildInfo()
 }
