@@ -15,4 +15,4 @@ run:
 
 params:
   TERM: -dumb
-  GRADLE_OPTS: -Dorg.gradle.native=false
+  GRADLE_OPTS: -Dorg.gradle.native=false -Dorg.gradle.logging.level=info
