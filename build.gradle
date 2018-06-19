@@ -15,7 +15,6 @@ buildscript {
     }
 }
 
-
 plugins {
     id "com.gorylenko.gradle-git-properties" version "1.4.17"
 }
@@ -72,10 +71,10 @@ dependencies {
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
 
-jar {
-    baseName = "spring-music"
-    version = "" // omit the version from the war file name
-}
+//jar {
+//    baseName = "spring-music"
+//    version = "" // omit the version from the war file name
+//}
 
 
 springBoot  {
